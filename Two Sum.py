@@ -40,15 +40,14 @@ class Solution_2:
         hashmap = {}  #dictionary
 
         for i in range(len(nums)):
-            hashmap[nums[i]] = i
-        for i in range(len(nums)):
             complement = target - nums[i]
-            if complement in hashmap and hashmap[complement] != i:
+            if complement in hashmap:
                 return [i, hashmap[complement]]
+            hashmap[nums[i]]=i
       
       
 nums = [2, 7, 11, 15]
-target = 9
+target = 26
 Solution_2 = Solution_2().twoSum(nums, target)
 print(Solution_2)
 
