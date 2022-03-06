@@ -1,7 +1,3 @@
-from turtle import ycor
-from typing import List
-
-from numpy import zeros
 
 #parameters
 x = 15433451      #s/b true
