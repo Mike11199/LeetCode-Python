@@ -1,3 +1,6 @@
+
+#WIP can't get this to work in VS Code
+
 from typing import Optional
 
 class ListNode:
@@ -9,11 +12,6 @@ class ListNode:
 class LinkedList:
     def __init__(self):  
         self.head = None
-
-
-
-
-
 
 
 
