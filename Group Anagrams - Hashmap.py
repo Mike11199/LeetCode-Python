@@ -11,7 +11,7 @@ class Solution:
             
             for c in s:                         # for char in string...  use this to generate 26 len array of char counts for each string
                 # print(ord(c))
-                count[ord(c) - ord("a")] += 1   # increment the count of each letter.  letter a is 0, d is 3, etc.
+                count[ord(c) - ord("a")] += 1   # increment the count of each letter.  letter a is 0, d is 3, etc. Because letters after a have higher dec #s
 
             
             res[tuple(count)].append(s)         # key = tuple of char count array; value = original string;
