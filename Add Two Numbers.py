@@ -1,6 +1,4 @@
 
-#WIP can't get this to work in VS Code
-
 from typing import Optional
 
 class ListNode:
@@ -21,7 +19,7 @@ class Solution:
         ptr1 = l1; ptr2 = l2
         curr = temp; carry =0
         
-        while ptr1 or ptr2:                 #while ptr1 or ptr2 is not null... at end of while loop we assing ptr1/ptr2 to ptr.next
+        while ptr1 or ptr2:                 #while ptr1 or ptr2 is not null... at end of while loop we assign ptr1/ptr2 to ptr.next
            
             x = (l1.val if l1 != None else 0)  #ternary expression
             y = (l2.val if l2 != None else 0)
