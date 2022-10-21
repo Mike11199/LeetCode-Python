@@ -46,7 +46,16 @@ class Solution:
             
         return matches == 26
        
+    def checkInclusion_sorting(self, s1: str, s2: str) -> bool:
 
+        l = 0 
+        for r in range(len(s2)):
+            if r - l + 1 == len(s1):
+                if sorted(s2[l:r+1]) == sorted(s1):
+                    return True
+                else:
+                    l +=1
+        return False
 
 
 
@@ -61,6 +70,10 @@ s4 = "eidboaoo"
 
 print(Solution().checkInclusion(s1,s2))
 print(Solution().checkInclusion(s3,s4))
+
+print(Solution().checkInclusion_sorting(s1,s2))
+print(Solution().checkInclusion_sorting(s3,s4))
+
 
 
 
