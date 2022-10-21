@@ -23,7 +23,7 @@ class Solution:
                 have +=1 
 
             while have == need:                                
-                # UPDATE OUR RESULT IF NEEDED
+                # UPDATE OUR RESULT IF COUNT MATCH AND WINDOW IS SMALLEST SO FAR
                 if ( r - l + 1 ) < resLen:    
                     res = [l, r]
                     resLen = (r - l + 1 )                                                    
