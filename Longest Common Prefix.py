@@ -1,13 +1,8 @@
 
-from typing import List
-
-
-
-def longestCommonPrefix(strs: List[str]) -> str:
+def longestCommonPrefix(strs: list[str]) -> str:
 
     prefix = []
 
-    nums = len(strs)
 
     for x in zip(*strs):
         if len(set(x)) == 1:
