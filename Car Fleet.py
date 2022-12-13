@@ -6,7 +6,7 @@ class Solution:
 
         for p, s in sorted(pair)[::-1]:                    # sort, reverse loop to consider cars from last pos to first pos
             stack.append((target - p) / s)                 # append time car will reach target to stack
-            if len(stack) >=2 and stack[-1] <= stack[-2]:  # if top of stack speed slower/equal to prev, pop top of stack as fleet
+            if len(stack) >=2 and stack[-1] <= stack[-2]:  # if top of stack finish time slower/equal to prev, pop top of stack as fleet
                 stack.pop()
         return len(stack)                                  # len of stack is num of car fleets
     
@@ -18,9 +18,9 @@ class Solution:
         
         pair.sort()
 
-        for p, s in pair[::-1]:                    # sort, reverse loop to consider cars from last pos to first pos
+        for p, s in pair[::-1]:                            # sort, reverse loop to consider cars from last pos to first pos
             stack.append((target - p) / s)                 # append time car will reach target to stack
-            if len(stack) >=2 and stack[-1] <= stack[-2]:  # if top of stack speed slower/equal to prev, pop top of stack as fleet
+            if len(stack) >=2 and stack[-1] <= stack[-2]:  # if top of stack finish time slower/equal to prev, pop top of stack as fleet
                 stack.pop()
         return len(stack)                                  # len of stack is num of car fleets   
     
