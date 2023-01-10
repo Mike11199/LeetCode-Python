@@ -14,7 +14,7 @@ class Solution:
     
     def searchMatrix_Binary_Search(self, matrix, target):
         """
-        Brute Force = O(M x N) or O(N)
+        Binary Search:  O( log N)
         """
         ROWS = len(matrix)
         COLS = len(matrix[0])
